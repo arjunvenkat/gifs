@@ -1,4 +1,8 @@
 class GifsController < ApplicationController
+  def show
+    @gif = Gif.find_by_id(params['id'])
+  end
+  
   def new
   end
   
